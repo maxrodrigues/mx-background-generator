@@ -4,6 +4,15 @@ namespace App\Tables;
 
 use App\Traits\RollDice;
 
+/*
+|--------------------------------------------------------------------------
+| Circumstance Of Birth Table
+|--------------------------------------------------------------------------
+|
+| Circumstance of Birth to determine the circumstances of your birth.
+|
+*/
+
 class CircumstanceOfBirthTable
 {
     use RollDice;
