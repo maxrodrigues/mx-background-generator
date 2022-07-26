@@ -23,7 +23,7 @@ class ParentsProfessionTable
     {
         $roll = self::roll(1, 100);
 
-        if ($roll[0] > 1 && $roll <= 5) {
+        if ($roll[0] > 0 && $roll <= 5) {
             $response = 'Slaves';
         }
 

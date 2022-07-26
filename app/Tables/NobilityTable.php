@@ -24,7 +24,7 @@ class Nobility
     {
         $roll = self::roll(1, 100);
 
-        if ($roll[0] > 1 && $roll[0] <= 60) {
+        if ($roll[0] > 0 && $roll[0] <= 60) {
             $response['type'] = 'Gentry';
             $response['text'] = 'You are the child of a minor lord, lady, or noble with an income, hereditary land such as a manor, and titles. You likely grew up in a manor and your parents were paid tribute by peasants. Your parents serve a higher baron, count, or duke.';
         }

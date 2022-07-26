@@ -24,7 +24,7 @@ class CircumstanceOfBirthTable
         $roll = self::roll(1, 100);
         $circumstanceOfBirth = $roll[0];
 
-        if ($circumstanceOfBirth > 1 && $circumstanceOfBirth <= 40) {
+        if ($circumstanceOfBirth > 0 && $circumstanceOfBirth <= 40) {
             $response['type'] = 'Lower-Class Birth';
             $response['text'] = 'You were born among peasants or slum denizens. You grew up working the land around a village or manor, practicing a rudimentary trade, or begging in a settlement.';
         }

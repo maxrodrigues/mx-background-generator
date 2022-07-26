@@ -22,7 +22,7 @@ class AdoptedOutsideYourRaceTable
     {
         $roll = self::roll(1, 100);
 
-        if ($roll[0] > 1 && $roll[0] <= 5) {
+        if ($roll[0] > 0 && $roll[0] <= 5) {
             $response['type'] = 'Adopted by Dragons';
             $response['text'] = 'For its own purposes, a dragon raised you as its own. You have learned the language and history, wisdom, power, and might of dragonkind.';
         }
