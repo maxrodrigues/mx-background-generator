@@ -2,6 +2,7 @@
 
 namespace App\Tables\Races;
 
+use App\Tables\UnusualHomelandTable;
 use App\Traits\RollDice;
 
 class DwarfTable
@@ -37,7 +38,7 @@ class DwarfTable
         }
 
         if ($roll['total'] > 95 && $roll['total'] <= 100) {
-            $response = 'Unusual Homeland';
+            $response = UnusualHomelandTable::execute();
         }
 
         return $response;

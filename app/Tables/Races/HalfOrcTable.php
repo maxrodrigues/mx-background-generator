@@ -2,6 +2,7 @@
 
 namespace App\Tables\Races;
 
+use App\Tables\UnusualHomelandTable;
 use App\Traits\RollDice;
 
 class HalfOrcTable
@@ -37,7 +38,7 @@ class HalfOrcTable
         }
 
         if ($roll['total'] > 90 && $roll['total'] <= 100) {
-            $response = 'Unusual Homeland';
+            $response = UnusualHomelandTable::execute();
         }
 
         return $response;
